@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Level 1</title>
+		<style>
+			html {
+				height: 100%;
+			}
+			body {
+				margin: 0;
+				height: 100%;
+			}
+			canvas {
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			h1 {
+                text-align: center;
+                font-size: 40px;
+				color:white;
+            }
+            h2 {
+                text-align: center;
+                font-size: 30px;
+				color:white;
+            }
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+				color:white;
+			}
+			#Win {
+				width: 100%;
+				height: 100%;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				text-align: center;
+				font-size: 14px;
+				cursor: pointer;
+				color:white;
+			}
+			#Lose {
+				width: 100%;
+				height: 100%;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				text-align: center;
+				font-size: 14px;
+				cursor: pointer;
+				color:white;
+			}
+			a:link, a:visited, a:hover, a:active
+            {
+                text-decoration: none;
+            }
+  		</style>
+	</head>
+	<body>
+		<div id="blocker">
+			<div id="Win">
+				<h1>You Survived</h1>
+				<a href="index.html">
+					<h2>
+						Main Menu
+					</h2>
+				</a>
+				<a href="Level1.html">
+					<h2>
+						Retry
+					</h2>
+				</a>
+				<a href="Level2.html">
+					<h2>
+						Level 2
+					</h2>
+				</a>
+			</div>
+			<div id="Lose">
+				<h1>He Got You</h1>
+				<a href="index.html">
+					<h2>
+						Main Menu
+					</h2>
+				</a>
+				<a href="Level1.html">
+					<h2>
+						Retry
+					</h2>
+				</a>
+			</div>
+		</div>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three@0.149.0/build/three.module.js",
+					"GLTFLoader": "https://unpkg.com/three@0.149.0/examples/jsm/loaders/GLTFLoader.js",
+					"PointerLockControls": "https://unpkg.com/three@0.149.0/examples/jsm/controls/PointerLockControls.js"
+				}
+			}
+		</script>
+		<script src="Level1.js" type="module"></script>
+	</body>
+</html>
